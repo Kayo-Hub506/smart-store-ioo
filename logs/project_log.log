@@ -1,0 +1,5 @@
+2025-03-21 20:49:23.291 | INFO     | __main__:main:41 - Starting data preparation...
+2025-03-21 20:49:23.291 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/fikayooladipo/Projects/smart-store-ioo/data/raw/customers_data.csv.
+2025-03-21 20:49:23.294 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/fikayooladipo/Projects/smart-store-ioo/data/raw/products_data.csv.
+2025-03-21 20:49:23.295 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/fikayooladipo/Projects/smart-store-ioo/data/raw/sales_data.csv.
+2025-03-21 20:49:23.296 | INFO     | __main__:main:45 - Data preparation complete.
