@@ -42,10 +42,20 @@ python3 scripts/data_preparation/prepare_customers_data.py
 python3 scripts/data_preparation/prepare_products_data.py
 python3 scripts/data_preparation/prepare_sales_data.py
 ```
-```shell
+
 Customer Data Cleanup- removed duplicate custer ID 1011, same name as customer 1010
 Products Data Cleanup - updated spelling of nintendo
 Sales Data Cleanup - removed aplha chara on row 9 BonusPoints 
+
+### Step 2 - Run the Data Preparation Scripts to cleanup the data with data scrubber
+```shell
+python3 scripts/data_prep_customers.py
+python3 scripts/data_prep_products.py
+python3 scripts/data_prep_sales.py
+
+Customer Data Cleanup- removed duplicates and LoyalityPoints range (0, 1000)
+Products Data Cleanup - removed duplicates, YearAdded range (1990,2025)
+Sales Data Cleanup - checked for duplicates
 -----
 
 ## Commands Used (Frequently) to update GitHub 
