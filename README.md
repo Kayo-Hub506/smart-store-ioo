@@ -69,9 +69,13 @@ Customer total revenue per quarter, per product. Having this information allows 
 ###  Section 2. Data Source
 I started with my sales_data_prepared file.  This data was uploaded into Power BI.  The columns utlized are:SaleDate, CustomerID, SalesID, ProductID 
 ### Section 3. Tools
-I utlized Power BI, due to my past familiarity with using this tool. I knew I would be able to drill down the information and create the visualtion need. 
+I utilized Power BI, due to my past familiarity with using this tool. I knew I would be able to drill down the information and create the visualization need. 
 ### Section 4. Workflow & Logic
-I sum the total reveuene by customer for the year.  I also looked to see what quarter those sales came in by customer to detemrine if they regulary shopped with us or one time purchase.  Also reviewing the products that were bought the most per each customer. 
+I summed the total revenue by customer for the year.  I also looked to see what quarter those sales came in by customer to detemrine if the customer regularly shopped with us or if it was a one time purchase.  I also reviewed the products that were bought the most per each customer. 
+- Tables: sales
+- Columns: productID, customerID, sale_date, sale_amount
+- Workflow: Aggregate by product and customer category, calculate total sales per quarter 
+- Output: Bar chart + summary table
 ### Section 5. Results
  ![alt text](image.png)
  ![alt text](image-1.png)
