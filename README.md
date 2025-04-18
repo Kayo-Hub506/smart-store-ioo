@@ -62,9 +62,25 @@ Sales Data Cleanup - checked for duplicates
 
 Created the create_dw.py script that create the database.  Using the etl_to_dw.py script, tables where created based on the schemas.  
 
-
+### Issues with Loading tables
 -----
-
+### Section 1. The Business Goal 
+Customer total revenue per quarter, per product. Having this information allows us to know where most of our revenue is coming from and determine if customer are being lost or realtionships are strong. 
+###  Section 2. Data Source
+I started with my sales_data_prepared file.  This data was uploaded into Power BI.  The columns utlized are:SaleDate, CustomerID, SalesID, ProductID 
+### Section 3. Tools
+I utlized Power BI, due to my past familiarity with using this tool. I knew I would be able to drill down the information and create the visualtion need. 
+### Section 4. Workflow & Logic
+I sum the total reveuene by customer for the year.  I also looked to see what quarter those sales came in by customer to detemrine if they regulary shopped with us or one time purchase.  Also reviewing the products that were bought the most per each customer. 
+### Section 5. Results
+ ![alt text](image.png)
+ ![alt text](image-1.png)
+ ![alt text](image-2.png)
+Explain any suggested actions based on the results you uncovered.
+### Section 6: Suggested Business Action 
+Customer ID 1001 and 1010 bring in the highest reveune of sales.  These customers should be targeted for loyalty programs, upselling, or exclusive offers.  Customers with less than 10k revenue for the year, should be targeted for promotional incentives.
+### Section 7. Challenges
+none
 ## Commands Used (Frequently) to update GitHub 
 
 ```
