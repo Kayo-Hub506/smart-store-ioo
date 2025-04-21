@@ -63,7 +63,12 @@ Sales Data Cleanup - checked for duplicates
 Created the create_dw.py script that create the database.  Using the etl_to_dw.py script, tables where created based on the schemas.  
 
 ### Issues with Loading tables
------
+
+I was unable to load the tbales necessary for module 5
+
+----
+
+## Module 6 
 ### Section 1. The Business Goal 
 Customer total revenue per quarter, per product. Having this information allows us to know where most of our revenue is coming from and determine if customer are being lost or realtionships are strong. 
 ###  Section 2. Data Source
@@ -85,8 +90,53 @@ Explain any suggested actions based on the results you uncovered.
 Customer ID 1001 and 1010 bring in the highest reveune of sales.  These customers should be targeted for loyalty programs, upselling, or exclusive offers.  Customers with less than 10k revenue for the year, should be targeted for promotional incentives.
 ### Section 7. Challenges
 none
-## Commands Used (Frequently) to update GitHub 
 
+-----
+
+# Module 7 Project
+## Section 1. The Business Goal
+Identify the most profitable product by month and region.
+## Section 2. Data Source
+sales_data_prepared and customer_data_prepared file.  I combined these files in order to be able to do the required analysis in Power BI.
+## Section 3. Tools Used
+Power BI
+## Section 4. Workflow & Logic
+I combined the the sales_data_prepared and customer_data_prepared file; this new file is called sales_customer_data_prepared. The region was in the customer file and this is a needed splicer for this analaysis. I then summed the total revenue by product for each month in each region.  
+- Tables: sales, customer, product
+- Columns: productID, customerID, sale_date, sale_amount, region, product_name, category
+- Workflow: Aggregate by product name and region category, calculate total sales per month 
+- Output: Bar chart + summary table
+## Section 5. Results (narrative + visualizations)
+![alt text](image-6.png)
+
+### Summary
+![alt text](image-4.png)
+
+### Dashboard
+![alt text](image-5.png)
+## Section 6. Suggested Business Action
+Laptops dominate revenue across all regions and months. 
+
+**East**: Consistently strong across all months. Dominated by laptops.
+*Action: Expand laptop offerings – Add accessories (e.g., high-end cases, extended warranties). Launch loyalty or membership programs for frequent tech buyers. Use the East region as a pilot market for new laptop-related products or bundles.*
+
+**South**: Major spike in March and April driven by laptops and jackets.
+*Action: Run seasonal campaigns in Q1–Q2. Consider stocking lighter apparel post-April. Target universities or educational programs with student-focused laptop campaigns in early spring.*
+
+**North**: Laptops are nearly absent. Lower totals, but jackets and hats do fairly well in spring and fall.
+*Action: Focus on seasonal promotions (e.g., spring outerwear). Boost regional awareness with targeted ads.*
+
+**West**: Peaks in April and June from laptops and hats.
+*Action: Push smart product bundles (e.g., laptop + hoodie + protector). Launch summer offers early (April–June).*
+
+## Section 7. Challenges
+My biggest challenge was being able to drill down my visulaizations for what I want it to look like. 
+
+## Section 8. Ethical Considerations
+**Risk**: Over-prioritizing certain regions or demographics while neglecting others may unintentionally reinforce inequality or limit opportunities.
+**Ethical Action**: Apply equity-based thinking — make sure all regions get access to quality products, support, and offers. When investing more in high-performing areas, also consider strategies to uplift underserved regions (e.g., North).
+
+## Commands Used (Frequently) to update GitHub 
 ```
 # to check the status
 git status
@@ -96,4 +146,9 @@ git add .
 git commit -m "<<message to commit>>"
 # to push into remote branch
 git push -u origin main
+
+git add .
+git commit -m "Completed custom BI project"
+git push -u origin main
+
 ```
